@@ -25,8 +25,9 @@ function Home() {
 
   const handelInfiniteScroll = async () => {
     try {
+          
       if (
-        window.innerHeight + document.documentElement.scrollTop + 1 >=
+        window.innerHeight + document.documentElement.scrollTop + 20 >=
         document.documentElement.scrollHeight
       ) {
         setCurrentPage((prev) => prev + 1);
@@ -60,7 +61,7 @@ function Home() {
           </div>
 
           <h2 className="homeHeading">Featured Products</h2>
-          {console.log(homeProducts)}
+          
           <div className="container" id="container">
             {homeProducts &&
               homeProducts.map((product) => (
