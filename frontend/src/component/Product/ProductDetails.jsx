@@ -69,7 +69,15 @@ const ProductDetails = () => {
   }, [dispatch, params,reviewError,success]);
 
   const addToCartHandler = () => {
-    dispatch(addItemsTocart(id, quantity));
+    const payload = {
+      product: product._id,
+      name: product.name,
+      price: product.price,
+      image: product.images[0].url,
+      stock: product.stock,
+      quantity: quantity,
+    };
+    dispatch(addItemsTocart(payload));
     toast.success("Item added to cart");
   };
 

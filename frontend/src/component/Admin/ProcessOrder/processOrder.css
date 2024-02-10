@@ -1,3 +1,12 @@
+.newProductContainerr{
+  border: 2px solid red;
+    width: 100%;
+    box-sizing: border-box;
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;  
+}
 .updateOrderForm {
     margin: 5vmax 0;
     padding: 3vmax;
