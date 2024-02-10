@@ -123,7 +123,7 @@ const ProductDetails = () => {
                     >
                       -
                     </button>
-                    <input readOnly type="number" value={quantity} />
+                    <input className="span" readOnly type="number" value={quantity} />
                     <button
                       onClick={() =>
                         setQuantity((quantity) =>
